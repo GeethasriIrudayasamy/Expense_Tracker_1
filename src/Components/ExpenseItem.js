@@ -7,14 +7,14 @@ function ExpenseItem(props) {
     // const LocationOfExpenditure = "Bakery";
     return (
         <div className="expense-item">
-            {/* <div>{expenseDate.toISOString()}</div>
+            <div>{props.date.toISOString()}</div>
             <div className="expense-item__description">
-                <h2>{expenseTitle}</h2>
-            </div> */}
+                <h2>{props.title}</h2>
+            </div>
             <div className="expense-item__description">
                 <h2>{props.location}</h2>
             </div>
-            {/* <div className="expense-item__price">{expenseAmount}</div> */}
+            <div className="expense-item__price">{props.amount}</div>
         </div>
     );
 }
