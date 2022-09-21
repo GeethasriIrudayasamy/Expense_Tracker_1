@@ -1,6 +1,6 @@
-import ExpenseItem from "./Components/ExpenseItem";
+import ExpenseItem from "./Components/ExpenseItem/ExpenseItem";
 
-function App() {
+const App = () => {
     const expenses = [
         {
             date: new Date(2022, 8, 12),
@@ -33,6 +33,6 @@ function App() {
             ))}
         </div>
     );
-}
+};
 
 export default App;
