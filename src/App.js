@@ -20,6 +20,12 @@ const App = () => {
             location: "Satya Electronics",
             amount: "RS.17000",
         },
+        {
+            date: new Date(2021, 11, 30),
+            title: "Gift",
+            location: "SK showrooms",
+            amount: "RS.650",
+        },
     ];
     return (
         <div>
