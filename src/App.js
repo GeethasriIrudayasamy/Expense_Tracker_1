@@ -1,4 +1,6 @@
 import ExpenseItem from "./Components/ExpenseItem/ExpenseItem";
+import Card from "./Components/Card/Card";
+import "./Components/ExpenseDetails/expenses.css";
 
 const App = () => {
     const expenses = [
@@ -29,14 +31,16 @@ const App = () => {
     ];
     return (
         <div>
-            {expenses.map((data) => (
-                <ExpenseItem
-                    date={data.date}
-                    title={data.title}
-                    location={data.location}
-                    amount={data.amount}
-                ></ExpenseItem>
-            ))}
+            <Card className="expenses">
+                {expenses.map((data) => (
+                    <ExpenseItem
+                        date={data.date}
+                        title={data.title}
+                        location={data.location}
+                        amount={data.amount}
+                    ></ExpenseItem>
+                ))}
+            </Card>
         </div>
     );
 };

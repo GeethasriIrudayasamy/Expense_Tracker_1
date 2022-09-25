@@ -1,4 +1,4 @@
-import "./ExpenseItem/ExpenseItem.css";
+import "../ExpenseItem/ExpenseItem.css";
 const ExpenseDetails = (props) => {
     return (
         <div className="expense-item__description">
