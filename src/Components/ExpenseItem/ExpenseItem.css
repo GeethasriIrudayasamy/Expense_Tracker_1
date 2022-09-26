@@ -52,3 +52,16 @@
         padding: 0.5rem 1.5rem;
     }
 }
+.del-button {
+    border-radius: 12px;
+    background-color: lightseagreen;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+.del-button:hover {
+    background-color: rgba(32, 178, 171, 0.76);
+}

@@ -11,7 +11,10 @@ const ExpenseItem = (props) => {
         <Card className="expense-item">
             <ExpenseDate date={props.date} />
             <ExpenseDetails title={props.title} amount={props.amount} />
-            <button onClick={deleteHandler}>Delete Expense</button>
+
+            <button className="del-button" onClick={deleteHandler}>
+                Delete Expense
+            </button>
         </Card>
     );
 };
