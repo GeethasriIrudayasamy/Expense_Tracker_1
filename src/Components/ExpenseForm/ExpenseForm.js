@@ -29,6 +29,9 @@ const ExpenseForm = () => {
         };
 
         console.log(ExpenseData);
+        setEnteredAmount("");
+        setEnteredDate("");
+        setEnteredTitle("");
     };
     return (
         <form onSubmit={submitHandler}>
