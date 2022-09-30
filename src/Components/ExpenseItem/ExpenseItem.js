@@ -13,14 +13,16 @@ const ExpenseItem = (props) => {
     //     console.log("expense amount changed to 100$");
     // };
     return (
-        <Card className="expense-item">
-            <ExpenseDate date={props.date} />
-            <ExpenseDetails title={props.title} amount={props.amount} />
-            {/* 
+        <div>
+            <Card className="expense-item">
+                <ExpenseDate date={props.date} />
+                <ExpenseDetails title={props.title} amount={props.amount} />
+                {/* 
             <button className="update-button" onClick={updateHandler}>
                 Update
             </button> */}
-        </Card>
+            </Card>
+        </div>
     );
 };
 
